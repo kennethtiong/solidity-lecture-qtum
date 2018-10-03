@@ -1,0 +1,10 @@
+// How to test this:
+
+// 1. Deploy Reentrance contract. Take note of the address.
+// 2. With the same account, call donate() and send 1 ether.
+// 3. With a second account, deploy Exploit contract and pass Reentrance address.
+// 4. Call attack(), sending 0.1 ether.
+// 5. Call ethBalance() to check Reentrance ether balance, should be 0. 
+// 6. Call ethBalance() to check Exploit balance, should be 1 ether
+// 7. Call kill() to selfdestruct Exploit and get the 1 ether forwarded to attacker account.
+

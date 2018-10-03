@@ -1,0 +1,14 @@
+Solidity, the main programming language for Ethereum and other EVM-emulation chains like QTUM, is subject to many quirks. Building on Solidity can therefore be dangerous for the neophyte programmer without a knowledge of standardized libraries and safe patterns. In this talk, we'll go through several common exploits on Solidity.
+
+We will have discussions and some live-demos on a grab-bag of topics based on several famous exploits:
+
+Re-entrancy - Why you shouldn't transfer flow control to an untrusted contract before updating state (DAO hack)
+Pseudorandomness - Why you shouldn't rely on any (pseudo) randomness within the EVM
+DelegateCall - Why using DelegateCall as a catch-all forwarding mechanism is bad idea (Parity Hack)
+ICO Contributions from Contracts - how some gamed the ICO contribution system in 2017 with contract addresses
+Block Manipulation with Gas Limit - how to prevent changes of blockchain state that you're unhappy with
+We hope to see you there!
+
+Date : 6 October 2018, Saturday
+Time : 11.00am to 1.00pm
+Venue : 32 Carpenter Street, Singapore 059911
