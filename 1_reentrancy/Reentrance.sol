@@ -26,7 +26,6 @@ contract Reentrance {
 
   function withdraw(uint _amount) public {
     if(balances[msg.sender] >= _amount) {
-      // why would you do this? sees if you can call with that value (precomputing)
       if(msg.sender.call.value(_amount)()) { 
         _amount;
       }
